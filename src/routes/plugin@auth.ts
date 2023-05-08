@@ -6,11 +6,11 @@ export const { onRequest, useAuthSession, useAuthSignin, useAuthSignout } = serv
   () => ({
     providers: [
       GitHub({
-        clientId: process.env.NEXT_PUBLIC_GITHUB_ID!,
-        clientSecret: process.env.NEXT_PUBLIC_GITHUB_SECRET!,
+        clientId: process.env.GITHUB_ID!,
+        clientSecret: process.env.GITHUB_SECRET!,
       })
     ] as Provider[],
-    secret: process.env.NEXT_PUBLIC_AUTH_SECRET,
+    secret: process.env.NEXTAUTH_SECRET,
     trustHost: true
   })
 );
