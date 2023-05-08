@@ -1,10 +1,12 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
+import Login from '~/components/login';
 
 export default component$(() => {
   return (
     <>
       <p class="text-center">Kanban</p>
+      <Login />
     </>
   );
 });
